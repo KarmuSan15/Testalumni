@@ -37,16 +37,13 @@ describe('FormUsuario componente', () => {
         expect(tex).toBeInTheDocument();
     });
 
-    // Tercera prueba (duplicada): Se repite la misma prueba que la anterior. Vamos a eliminarla
-    // Elimino este bloque porque ya se está comprobando en el segundo 'it' anterior.
-
-    // Cuarta prueba: Verificamos si el encabezado h2 está presente en el documento
+    // Tercera prueba: Verificamos si el encabezado h2 está presente en el documento
     it("prueba renderizado h2", () => {
         // Comprobamos que el encabezado de nivel 2 (h2) esté presente
         expect(cabh2).toBeInTheDocument();
     });
 
-    // Quinta prueba: Verificamos que al hacer clic en el botón, el campo de texto se borra
+    // Cuarta prueba: Verificamos que al hacer clic en el botón, el campo de texto se borra
     it('comprobar si al pulsar el botón se borra lo escrito en el campo de texto', async () => {
         // Creamos una instancia de userEvent para simular interacciones del usuario
         const user = userEvent.setup();
